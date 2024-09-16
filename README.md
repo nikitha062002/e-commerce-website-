@@ -30,6 +30,7 @@ This repository contains the code for a comprehensive e-commerce website. The si
 1. **Clone the repository:**
     ```sh
     git clone https://github.com/nikitha062002/e-commerce-website.git
+
     cd e-commerce-website
     ```
 
