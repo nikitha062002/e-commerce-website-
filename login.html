@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flip-container" id="flip-container">
+            <div class="flipper">
+                <!-- Login Side -->
+                <div class="front">
+                    <h1>Login</h1>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" required placeholder="Enter Password">
+                        </div>
+                        <button type="submit">Login <a href="home-profile.html"></a></button>
+                        <a href="#" id="forgot-password">Forgot your password?</a>
+                    </form>
+                    <button id="flip-btn">Switch to Sign Up</button>
+                </div>
+                <!-- Signup Side -->
+                <div class="back">
+                    <h1>Sign Up</h1>
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email-signup" name="email" required placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password-signup" name="password" required placeholder="Enter Password">
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <button id="flip-back-btn">Switch to Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

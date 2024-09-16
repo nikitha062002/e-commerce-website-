@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home Page</title>
+    <link rel="stylesheet" href="home.css"> <!-- Main CSS -->
+    <link rel="stylesheet" href="product-carousel.css"> <!-- Product carousel CSS -->
+    <link rel="stylesheet" href="shopping-cart.css"> <!-- Shopping cart CSS -->
+    <link rel="stylesheet" href="home.profile.css"> <!-- Profile specific CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="icon-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">sh.in</div>
+        <div class="profile-icons">
+            <a href="shopping-cart.html" id="cart" class="cart-icon">Cart</a>
+            <span id="user-name">User</span>
+            <a href="home.html" id="logout-btn">Logout</a>
+        </div>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for products...">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Product Carousel Section -->
+    <section id="carousel">
+        <h2>Featured Products</h2>
+        <div class="product-carousel">
+            <div class="product-box" data-name="Earphones" data-price="$50">
+                <img src="wired earphones.webp" alt="Earphones">
+                <div class="details">
+                    <p>Earphones</p>
+                    <p>$50</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" data-name="Mobile Phone" data-price="$300">
+                <img src="mobile.png" alt="Mobile Phone">
+                <div class="details">
+                    <p>Mobile Phone</p>
+                    <p>$300</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div id="saree_product" class="product-box" data-name="Saree" data-price="$120">
+                    <img src="saree.webp" alt="Saree">
+                    <div class="details">
+                        <p>Saree</p>
+                        <p>$120</p>
+                    </div>
+                    <button id="addcartsaree"class="add-to-cart">Add to Cart</button>
+                </div>
+            <!-- Add other products here -->
+        </div>
+    </section>
+    
+    <!-- About Company Section -->
+    <section id="about-company">
+        <h2>About Our Company</h2>
+        <p>Mission: To provide quality products at affordable prices.</p>
+        <p>Vision: To be the leading retailer in our industry.</p>
+        <p>Contact: contact@ourcompany.com</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile-section" style="display: none;">
+        <div class="profile-container">
+            <div class="profile-header">
+                <h1>Welcome, <span id="user-name">User<a href="profile.html"></a></span></h1>
+                <button id="logout-btn">Logout</button>
+            </div>
+            <div class="profile-content">
+                <p>Profile Details:</p>
+                <div id="profile-details">
+                    <!-- User profile details will be displayed here -->
+                </div>
+            </div>
+            <div class="profile-footer">
+                <button id="back-to-home">Back to Home</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="product-carousel.js"></script> <!-- Product carousel JS -->
+    <script src="home.js"></script> <!-- Your existing home page JS -->
+    <script src="home.log.js"></script> <!-- Additional JS for profile handling -->
+</body>
+</html>

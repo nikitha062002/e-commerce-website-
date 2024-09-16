@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home Page</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="icon-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">sh.in</div>
+        <div class="profile-icons">
+            <a href="login.html" id="login">Login</a>
+            <a href="profile.html" id="profile">Profile</a>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for products...">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Product Carousel Section -->
+    <section id="carousel">
+        <h2>Featured Products</h2>
+        <div class="product-carousel">
+            <div class="product-box" data-name="Earphones" data-price="$50">
+                <img src="wired earphones.webp" alt="Earphones">
+                <div class="details">
+                    <p>Earphones</p>
+                    <p>$50</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" data-name="Mobile Phone" data-price="$300">
+                <img src="mobile.png" alt="Mobile Phone">
+                <div class="details">
+                    <p>Mobile Phone</p>
+                    <p>$300</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Repeat for other products -->
+            <div id="saree_product" class="product-box" data-name="Saree" data-price="$120">
+                <img src="saree.webp" alt="Saree">
+                <div class="details">
+                    <p>Saree</p>
+                    <p>$120</p>
+                </div>
+                <button id="addcartsaree"class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add other products here -->
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section id="about-company">
+        <h2>About Our Company</h2>
+        <p>Mission: To provide quality products at affordable prices.</p>
+        <p>Vision: To be the leading retailer in our industry.</p>
+        <p>Contact: contact@ourcompany.com</p>
+    </section>
+
+    <script src="home.js"></script> <!-- Your existing home page JS -->
+</body>
+</html>
+
+
+
+

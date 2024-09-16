@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff6600;
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left h1 {
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right span {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+#saree_product{
+    position: relative;
+    left: 120%;
+    bottom: 103%;
+}
